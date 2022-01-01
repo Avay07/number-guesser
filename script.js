@@ -1,9 +1,11 @@
+// Defining the UI Elements 
 const button = document.getElementById('btn');
 const div = document.getElementById('the-div');
 const hint = document.getElementById('hint');
 const guesses = document.getElementById('guessLeft')
 const inputField = document.getElementById('input');
 
+// Variables
 let btnReset;
 let guessLeft = 3;
 
@@ -13,8 +15,11 @@ let high = 10;
 let number = Math.floor(Math.random() * (high - low) + low);
 // console.log(number);
 
+// Event Listener
 button.addEventListener('click', getResult);
 
+
+// Functions
 function getResult(){
     const input = Number(inputField.value);    
     
